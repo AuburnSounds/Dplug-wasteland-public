@@ -1,19 +1,16 @@
-# Dplug-wasteland-public
+# Dplug-wasteland
 
-This is the public Dplug Wasteland.
-
-The need for the Wasteland emerge as code that need to be maintained incurs community costs. 
-
-**This is unmaintained code, NO questions, NO guarantees, NO support, NO Issues. Follow the licences.**
+This is the Dplug Wasteland repositery.
 
 Explanations here:
 https://dplug.org/tutorials/Dplug%20Tutorials%207%20-%20Introducing%20the%20Wasteland.pdf
 
+**It contains unmaintained code to steal from for your Dplug project.**  
+Please keep in mind this is unmaintained, and often outdated. Consequently, please bring NO questions, expect NO guarantees, NO support, and NO Issues. Follow the licences.
 
-## Public vs Private Wasteland
+## What's the Wasteland commitee anyway?
 
-Code in the **public** Wasteland is available to everyone.
-Code in the **private** Wasteland is available to Wasteland members only.
+The Dplug Wasteland is a steering commitee of people vested into the Dplug ecosystem.
 
 The rules are the following:
 
@@ -27,3 +24,6 @@ The rules are the following:
 
 - Member can be excluded by strict majority of votes (not just expressed votes)
 
+## Logs of Wasteland decisions
+
+**28th Nov 2023** _(2 votes for, 1 vote against)_ Private Wasteland repositery to be merged into the Public one, delete the Dplug-wasteland-private repositery. The rationale is to bring more people to Dplug through open code. 
