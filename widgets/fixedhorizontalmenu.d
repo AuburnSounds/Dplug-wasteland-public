@@ -1,5 +1,5 @@
 /**
-Fixed menu. 2.. 3 ... x slots aligned horizontaly
+HFixed menu. 2.. 3 ... x slots aligned horizontaly
 
 -------------------------------
 | item1 | item2 | item3 | ... |
