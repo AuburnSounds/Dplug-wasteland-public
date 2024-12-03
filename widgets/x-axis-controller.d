@@ -28,7 +28,7 @@ this(BlablablablaClient client)
 ...
 
   // InputGain Slider
-  UIYAXISController inputGainSlider = mallocNew!UIYAXISController(context(), cast(FloatParameter) _client.param(paramInput));
+  UIXAXISController inputGainSlider = mallocNew!UIXAXISController(context(), cast(FloatParameter) _client.param(paramInput));
   addChild(inputGainSlider);
 ...
 }
