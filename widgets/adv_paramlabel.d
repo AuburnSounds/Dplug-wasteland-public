@@ -63,6 +63,11 @@ override void reflow()
         float S = W / cast(float)(context.getDefaultUIWidth()); // important, declare this
         _textresizefactor= 32*S;                                // important, declare this
         _textspacingresizefactor = 2.0f *S;                     // important, declare this
+        // Note : you can change the resize factor 
+        // _textresizefactor= 32*S; BIG
+        // _textresizefactor= 16*S; MEDIUM
+        // _textresizefactor= 12*S; SMALL
+        // etc. 
         
         ...
 
