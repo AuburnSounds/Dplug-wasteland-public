@@ -7,7 +7,7 @@ License:   $(LINK2 http://www.boost.org/LICENSE_1_0.txt, Boost License 1.0)
 Author:   Stephane Ribas
 
 Note 1 : This is a very naive and simple INTERNAL PRESET algo.
-Note 2 : few part of the code is inspired by Guillaume Piolat
+Note 2 : part of the code is inspired by Guillaume Piolat
 
   --- TUTORIAL BEFORE THE CODE -----
 
@@ -35,7 +35,7 @@ Private:
 
 3- then, in gui.d, in the THIS function, write the following code : 
 
-....
+...
 class AkiraTubeGUI : FlatBackgroundGUI!("new-akiratubebck.jpg") 
 {
 public:
@@ -76,7 +76,7 @@ override void reflow()
         ...
 
         // PRESETS 
-        _presets.position = rectangle(20, 20, 90, 520).scaleByFactor(S); //height=((80/3)*nbrofitems)
+        _presets.position = rectangle(20, 20, 90, 520).scaleByFactor(S); // <----- height=((80/3)*nbrofitems)
         _presets.textSize= _textresizefactor; 
         _presets.letterSpacing = _textspacingresizefactor;
     ...
@@ -123,7 +123,7 @@ override Parameter[] buildParameters()
 
 private:     
 ...
-/// type of presets value.
+/// name of the presets (the same declaration you wrote in the gui.d).
   enum presets_index {
     INIT,
     ENHANCE,
@@ -136,14 +136,14 @@ private:
 
 6- open the downverticalpresetmenu.d file, go down to the file :
 
-// you will find in the PROTECTED section the bank !
-// the vazlue for each preset is righ there
+// you will find, in the PROTECTED section, the bank !
+// the value for each preset is right there
 // I use an excel file to create my presets, 
-// then I export it as a CSV file and re import as an array :-)
+// then I export it as a CSV file and re import as an "array" :-)
 
 ...
 protected :
-// NUMBER OF PARAMETERS FOLLOWED BY NUMBER OF PRESETS
+// float[23][5] --> NUMBER OF PARAMETERS FOLLOWED BY NUMBER OF PRESETS
 float[23][5] presetvalues_row1=[
 [1,-4,1,1,20,1,20,0,15,0,0,0,2200,0,0,0,1,12050,2,32,0,80,0],
 [2,-4,1,1,25,1,20,0,15,1,1,5,8000,4,2,0,1,12050,2,32,0,100,0],
